@@ -1,0 +1,481 @@
+{
+    "Title": "Echoes of the Lost Bounty",
+    "Credits": "Created by Lorenzo Uk (luk@ucsc.edu).",
+    "InitialLocation": "Planning Room",
+    "Locations": {
+        "Planning Room": {
+            "Body": "This is the planning room. All the resources are here for you to find Captian Roger's lost treasure. Let's make sure you have everything you need to start your search. Your trusty companion Rocky will be accompaning you.",
+            "Choices": [
+                {
+                    "Text": "Info Journal",
+                    "Target": "Info Journal"
+                },
+                {
+                    "Text": "Pet Rocky",
+                    "Target": "Pet Rocky"
+                },
+                {
+                    "Text": "Old Pirate Sword Talisman",
+                    "Target": "Key1"
+                },
+                {
+                    "Text": "Start Adventure",
+                    "Target": "Start"
+                }
+            ]   
+        },
+        "Pet Rocky": {
+            "Body": "<em>You petted Rocky</em>. He loves it!",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Planning Room"
+                }
+            ]   
+        },
+        "Info Journal": {
+            "Body": "Captin Roger's chest is burried deep between his temple somewhere in the Lobo Jungle. He had four keys that could open his vault all being different talismans. We found the Old Sword Talisman and cannot seem to find the last ones. We have a clue for one of them, <em>The key be somewhere nigh the water, I dropped it 'n it flows away, I left it thar 'cause dis was me fav'rit drinkin' spot'</em>. You will need to find the codex, someone had it previously near a cave but we are not sure where it was left. Your not sure what this means, <em>Three relics guard what once was mine, Bound by compass and ancient sign. To trespass where the gold does sleep, Turn each with care, or doom runs deep. One bears steel, its edge once red, Now hungers still for southern dread. The second, bone of one long dead, Craves frigid winds above yer head. The last, a spark in flint and flame, Seeks sunset’s end to stake its claim. But heed this truth, ye greedy knave: All must face the path they crave— Else shadows rise and treasure stays Forever lost in ocean’s maze.</em>",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Planning Room"
+                }
+            ]   
+        },
+
+        "Key1": {
+            "Body": "",
+            "GivesItem": "Key1",
+            "ItemName": "Old Pirate Sword Talisman",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Planning Room"
+                }
+            ]   
+        },
+        "Start": {
+            "Body": "You have entered the Lobo Jungle, where would you like to go?",
+            "Choices": [
+                {
+                    "Text": "Cave",
+                    "Target": "Cave"
+                },
+                {
+                    "Text": "Waterfall",
+                    "Target": "Waterfall"
+                },
+                {
+                    "Text": "River",
+                    "Target": "River"
+                }
+            ]   
+        },
+        "Cave": {
+            "Body": "You have entered the cave and found a small campsite, you search the campsite and find several items",
+            "Choices": [
+                {
+                    "Text": "Dust",
+                    "Target": "Lighter"
+                },
+                {
+                    "Text": "Dusty Old Book",
+                    "Target": "Codex"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Start"
+                }
+            ]   
+        },
+        "Lighter": {
+            "Body": "Rocky sniffed something!",
+            "GivesItem": "lighter",
+            "ItemName": "Lighter",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Cave"
+                }
+            ]   
+        },
+        "Codex": {
+            "Body": "You found a dusty old book, your not sure what it does but you take it",
+            "GivesItem": "codex",
+            "ItemName": "Dusty Old Book",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Cave"
+                }
+            ]   
+        },
+        "River": {
+            "Body": "You walked to the river, theres nothing really here.",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Start"
+                },
+                {
+                    "Text": "Relax",
+                    "Target": "Key2"
+                }
+            ]   
+        },
+        "Key2": {
+            "Body": "While relaxing Rocky smelled something in the water",
+            "GivesItem": "Key2",
+            "ItemName": "Old Shard of Pirate Skull Talisman",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Start"
+                }
+            ]   
+        },
+        "Waterfall": {
+            "Body": "You notice something behind the waterfall, it looks like a temple, and it looks like a pirate code. Your unsure how to translate it and read it..",
+            "Choices": [
+                {
+                    "Text": "Decipher Using Codex",
+                    "Target": "Decipher"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Start"
+                }
+            ]   
+        },
+        "Decipher": {
+            "Body": "<em>I show the way near and far, Pointin' true like a north-bound star. I spin, but not for fun. Without me, the pirate's lost, done!</em>",
+            "RequiresKey": "codex", 
+            "Choices": [
+                {
+                    "Text": "The North Star",
+                    "Target": "Death1"
+                },
+                {
+                    "Text": "A Ship's Wheel",
+                    "Target": "Death1"
+                },
+                {
+                    "Text": "A Compass",
+                    "Target": "Room1"
+                }
+            ]   
+        },
+        "Death1": {
+            "Body": "You incorrectly guessed and a swarm of undead pirates killed you and Rocky... You Died!"
+        },
+        "Room1": {
+            "Body": "You have entered Captian Roger's Tomb, there are three tunnels up ahead where would you like to go...",
+            "Choices": [
+                {
+                    "Text": "First Tunnel",
+                    "Target": "First Tunnel"
+                },
+                {
+                    "Text": "Second Tunnel",
+                    "Target": "Second Tunnel"
+                },
+                {
+                    "Text": "Third Tunnel",
+                    "Target": "Third Tunnel"
+                }
+            ]
+        },
+        "Second Tunnel": {
+            "Body": "It's blocked, you need <em>keys</em> to open it...",
+            "Choices": [
+                {
+                    "Text": "Proceed Through",
+                    "Target": "Room2"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Room1"
+                }
+            ]
+        },
+        "Third Tunnel": {
+            "Body": "There is a hidden doorway, but there's another one of those pirate codes... <em>You'll find me in tales of old sailor's lore, My name is whispered with reverent awe. I fly with the wind but don't have a wing, And to lost souls, I always do sing.</em>",
+            "Choices": [
+                {
+                    "Text": "The Wind",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "A Siren's Song",
+                    "Target": "Key3"
+                },
+                {
+                    "Text": "Flying Dutchman",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "The One Eyed Storm",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "The Kraken",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Room1"
+                }
+            ]
+        },
+        "Key3": {
+            "Body": "The door opens and you find...",
+            "GivesItem": "Key3",
+            "ItemName": "Old Flintlock Pistol Talisman",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Room1"
+                }
+            ]   
+        },
+        "Death2": {
+            "Body": "The floor drops below you and Rocky and you two fall into a pit of spikes... You Died!"
+        },
+        "First Tunnel": {
+            "Body": "It looks like you need <em>three talismans</em>...",
+            "Choices": [
+                {
+                    "Text": "Insert Talismans",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Room1"
+                }
+            ]
+        },
+        "Puzzle": {
+            "Body": "nothing happened, you suddenly remembered something from the info journal... <em>Three relics guard what once was mine, Bound by compass and ancient sign. To trespass where the gold does sleep, Turn each with care, or doom runs deep. One bears steel, its edge once red, Now hungers still for southern dread. The second, bone of one long dead, Craves frigid winds above yer head. The last, a spark in flint and flame, Seeks sunset’s end to stake its claim. But heed this truth, ye greedy knave: All must face the path they crave— Else shadows rise and treasure stays Forever lost in ocean’s maze.</em>",
+            "Choices": [
+                {
+                    "Text": "South, West, North",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "North, West, North",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "North, West, South",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "East, West, East",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "South, North, East",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "West, East, South",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "South, North, West",
+                    "Target": "Key4"
+                },
+                {
+                    "Text": "East, West, West",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "North, South, West",
+                    "Target": "Death2"
+                },
+                {
+                    "Text": "South, South, North",
+                    "Target": "Puzzle"
+                },
+                {
+                    "Text": "South, West, East",
+                    "Target": "Death2"
+                }
+            ]
+        },
+        "Key4": {
+            "Body": "A door opened somewhere...",
+            "GivesItem": "Key4",
+            "ItemName": "Correct Code",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Room1"
+                }
+            ]  
+        },
+        "Room2": {
+            "Body": "You proceeded through the second tunnel and you finally made it to the treasure room!",
+            "RequiresKey": "Key4", 
+            "Choices": [
+                {
+                    "Text": "Grab Idol",
+                    "Target": "Death3"
+                },
+                {
+                    "Text": "Rocky",
+                    "Target": "Burn"
+                }
+            ]  
+        },
+        "Death3": {
+            "Body": "You grabbed the Idol but dynamite exploded on top of you and the rubble killed you and Rocky... You Died!"
+        },
+        "Burn": {
+            "Body": "Rocky sniffed something behind the thick vines, if only you had something to burn it with...",
+            "Choices": [
+                {
+                    "Text": "Grab Idol Instead",
+                    "Target": "Death3"
+                },
+                {
+                    "Text": "Use Lighter",
+                    "Target": "Room3"
+                }
+            ]
+        },
+        "Room3": {
+            "Body": "You burned the vines and now you have reached the inner chamber, there are three buttons of a pirate hat, a ship, and a bottle of rum, which will you choose, recall from the info journal <em>Three symbols lie in front of thee— The path ahead, they guard with glee. One rides the wind across the tide, One rests with pride on captain’s hide. One holds a truth both dark and deep, A burning secret pirates keep. Choose the one that holds no sail, No brim, no bow, no gust, no gale. For in its curves, the tales are spun, Of songs, of gold… and sips of fun.</em>",
+            "RequiresKey": "lighter", 
+            "Choices": [
+                {
+                    "Text": "Pirate Hat Button",
+                    "Target": "Death4"
+                },
+                {
+                    "Text": "Ship Button",
+                    "Target": "Death4"
+                },
+                {
+                    "Text": "Bottle of Rum Button",
+                    "Target": "Treasure Room"
+                }
+            ]
+        },
+        "Death4": {
+            "Body": "You pressed the wrong button and undead pirates killed you... You Died!"
+        },
+        "Treasure Room": {
+            "Body": "You found it... all of it...",
+            "Choices": [
+                {
+                    "Text": "Loot Pirate Gold",
+                    "Target": "Pirate Gold"
+                },
+                {
+                    "Text": "Loot Pirate Medallion",
+                    "Target": "Pirate Medallion"
+                },
+                {
+                    "Text": "Loot Pirate Jewlery",
+                    "Target": "Pirate Jewlery"
+                }
+            ]
+        },
+        "Pirate Gold": {
+            "Body": "",
+            "GivesItem": "Gold",
+            "ItemName": "Pirate Gold",
+            "Choices": [
+                {
+                    "Text": "Return Home",
+                    "Target": "Escape1"
+                }
+            ]
+        },
+        "Pirate Medallion": {
+            "Body": "",
+            "GivesItem": "Medallion",
+            "ItemName": "Pirate Medallion",
+            "Choices": [
+                {
+                    "Text": "Return Home",
+                    "Target": "Escape2"
+                }
+            ]
+        },
+        "Pirate Jewlery": {
+            "Body": "",
+            "GivesItem": "Jewlery",
+            "ItemName": "Pirate Jewlery",
+            "Choices": [
+                {
+                    "Text": "Return Home",
+                    "Target": "Escape3"
+                }
+            ]
+        },
+        "Escape1": {
+            "Body": "The chamber is collapsing, you run all back the way out you came, but the falling rubble has landed on Rocky, but you can't carry your treasure and Rocky at the same time, what will you do???",
+
+            "Choices": [
+                {
+                    "Text": "Save Rocky",
+                    "Target": "Save Rocky Gold"
+                },
+                {
+                    "Text": "Save Gold",
+                    "Target": "Save Gold"
+                }
+            ]
+        },
+        "Escape2": {
+            "Body": "The chamber is collapsing, you run all back the way out you came, but the falling rubble has landed on Rocky, but you can't carry your treasure and Rocky at the same time, what will you do???",
+
+            "Choices": [
+                {
+                    "Text": "Save Rocky",
+                    "Target": "Save Rocky Medallion"
+                },
+                {
+                    "Text": "Save Medallion",
+                    "Target": "Save Medallion"
+                }
+            ]
+        },
+        "Escape3": {
+            "Body": "The chamber is collapsing, you run all back the way out you came, but the falling rubble has landed on Rocky, but you can't carry your treasure and Rocky at the same time, what will you do???",
+
+            "Choices": [
+                {
+                    "Text": "Save Rocky",
+                    "Target": "Save Rocky Jewlery"
+                },
+                {
+                    "Text": "Save Jewlery",
+                    "Target": "Save Jewlery"
+                }
+            ]
+        },
+        "Save Rocky Gold": {
+            "Body": "You saved Rocky.. but you lost your gold in the rubble.. However you realized you had stored some in your pocket and you have made $5,000 USD and saved your best pal!"
+        },
+        "Save Rocky Medallion": {
+            "Body": "You saved Rocky.. and you lost your medallion... However you realized Rocky saved it in his mouth and you sold it for $50,000 USD, he's such a good boy!"
+        },
+        "Save Rocky Jewlery": {
+            "Body": "You saved Rocky.. but you lost all your treasure, but you have your best pal right next to you!"
+        },
+        "Save Gold": {
+            "Body": "You saved the gold and left Rocky behind... You sold your gold for $10,000 but you lost your best friend, was it worth it?"
+        },
+        "Save Medallion": {
+            "Body": "You saved medallion and left Rocky behind... You really are a true pirate, leaving your crew behind... and no one wants to buy your Medallion..."
+        },
+        "Save Jewlery": {
+            "Body": "You saved your Jewlery and left Rocky behind... You sold your Jewlery for $25,000, you feel guilty..."
+        }
+        
+
+    }
+}

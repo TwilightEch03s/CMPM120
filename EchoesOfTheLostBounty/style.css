@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'Trebuchet MS', serif;
+    background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
+    background-color: #f5eacb;
+    color: #3b2f2f;
+    padding: 40px;
+    line-height: 1.6;
+    font-size: 1.25em;
+    font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5b3a29;
+    text-shadow: 1px 1px 1px #e1c699;
+}
+
+button {
+    font-family: 'Pirata One';
+    font-size: 1.2em;
+    background-color: #9c6b30;
+    border: 2px solid #4a2f14;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #b47f4e;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+em {
+    color: #5e3b1c;
+    font-style: italic;
+    background-color: #fff5dc;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+
